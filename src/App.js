@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Inputmahasiswa from './Components/Inputmahasiswa';
+import Listmahasiswa from './Components/Listmahasiswa';
+import Navigation from './Components/Navigation';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import LoginModal from './Components/LoginModal';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/input-data" element={<Inputmahasiswa />} />
+          <Route path="list-mahasiswa" element={<Listmahasiswa />} />
+          <Route path="login" element={<Login  />} />
+          
+        </Routes>
+      </Router>
+    </>
+    );
+  }
 }
 
 export default App;
