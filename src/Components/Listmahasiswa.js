@@ -12,7 +12,7 @@ const ListMahasiswa = () => {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/mahasiswa')
+    axios.get('http://localhost:3001/api/mahasiswa') // ubah ini setiap ingin menentukan alamat backend nya
       .then(res => {
         setMahasiswa(res.data.data);
       })
