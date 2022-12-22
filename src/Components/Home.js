@@ -7,9 +7,9 @@ function Home() {
       <div className="row">
         <div className="col-md-4">
             <img src="logo192.png" className="card-img-top" alt="..." />
-              <h5 className="card-title">Bobrok</h5>
-              <p className="card-text">Web Bobrok.</p>
-              <a href="#" className="btn btn-primary">....</a>
+              <h5 className="card-title">DATABASE MAHASISWA</h5>
+              <p className="card-text">Free Database Mahasiswa React JS</p>
+              <a href="input-data" className="btn btn-primary">Input Data</a>
         </div>
       </div>
     </div>
