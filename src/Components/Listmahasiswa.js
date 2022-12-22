@@ -149,6 +149,7 @@ const ListMahasiswa = () => {
     <div className="form-group">
     <input type="text" className="form-control" placeholder="Cari nama mahasiswa" onChange={handleSearch} />
     </div>
+    <div className="table-responsive">
     <table className="table table-striped">
     <thead>
     <tr>
@@ -166,7 +167,7 @@ const ListMahasiswa = () => {
     <td>
     <td>
     <input type="checkbox" onClick={() => handleCheckboxClick(mhs.id)} />
-        </td>
+    </td>
     </td>
     <td>{index + 1}</td>
     <td>{mhs.nama}</td>
@@ -180,6 +181,7 @@ const ListMahasiswa = () => {
     ))}
     </tbody>
     </table>
+    </div>
     <button className="btn btn-danger" onClick={handleDeleteSelected}>Hapus yang dicentang</button>
     <Modal show={showModal} onHide={handleCloseModal}>
 <Modal.Header closeButton>
