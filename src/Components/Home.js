@@ -10,6 +10,7 @@ function Home() {
               <h5 className="card-title">DATABASE MAHASISWA</h5>
               <p className="card-text">Free Database Mahasiswa React JS</p>
               <a href="input-data" className="btn btn-primary">Input Data</a>
+              <a href="list-mahasiswa" className="btn btn-primary">List Mahasiswa</a>
         </div>
       </div>
     </div>
