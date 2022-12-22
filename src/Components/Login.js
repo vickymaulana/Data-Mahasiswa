@@ -25,15 +25,14 @@ function Login() {
       .then((response) => {
         if (response.data.success) {
           // Jika login berhasil, arahkan ke halaman home
-          // ...
+          // Masih Under Progress
         } else {
           // Jika login gagal, tampilkan pesan error
-          // ...
+          // Under Progress
         }
       })
       .catch((error) => {
         // Jika terjadi error pada permintaan, tampilkan pesan error
-        // ...
       });
   }
 
