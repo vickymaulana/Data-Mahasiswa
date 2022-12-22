@@ -4,28 +4,18 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">Input Data Sekolah</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/list-mahasiswa">List Mahasiswa</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/input-data">Tambah Mahasiswa</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/login">Login Akun</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Navbar.Brand href="/">Input Data Sekolah</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/list-mahasiswa">List Mahasiswa</Nav.Link>
+          <Nav.Link href="/input-data">Tambah Mahasiswa</Nav.Link>
+          <Nav.Link href="/login">Login Akun</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
